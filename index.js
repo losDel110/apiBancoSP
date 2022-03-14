@@ -1,3 +1,8 @@
+require("dotenv").config()
+require("./mongo")
+
+const Transaccion = require(".models/transacciones")
+
 const { response } = require("express");
 const { application } = require("express");
 const { request } = require("express");
