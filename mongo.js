@@ -1,12 +1,12 @@
-require("dotenv").config()
+require('dotenv').config()
 
-const { default: mongoose } = require("mongoose");
+const { default: mongoose } = require('mongoose')
 
-const conectionString= process.env.MONGO_DB_URI
+const conectionString = process.env.MONGO_DB_URI
 
 mongoose.connect(conectionString)
-.then(()=>{
-    console.log("Database conected")
-}).catch(err =>{
+  .then(() => {
+    console.log('Database conected')
+  }).catch(err => {
     console.log(err)
-})
+  })

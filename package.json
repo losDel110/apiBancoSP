@@ -4,7 +4,10 @@
   "description": "api de un homebanking de el banco ficticio sant patrick. parte de la iniciativa id 4 ideas",
   "main": "index.js",
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "2.0.15",
+    "standard": "16.0.4"
+
+    
   },
   "scripts": {
     "start": "node index.js",
@@ -25,5 +28,8 @@
     "dotenv": "16.0.0",
     "express": "4.17.3",
     "mongoose": "6.2.5"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }
